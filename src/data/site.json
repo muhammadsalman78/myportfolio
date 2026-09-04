@@ -1,0 +1,268 @@
+{
+  "name": "Muhammad Salman",
+  "shortName": "MS",
+  "role": "Software Engineer",
+  "title": "Software Engineer — React Native | React | Vue.js | Fintech",
+  "locationFull": "Karachi, Pakistan",
+  "timezone": "Asia/Karachi",
+  "email": "msalmangsm@gmail.com",
+  "phone": "+92-3322439312",
+  "formAccessKey": "b51e1656-dbdb-4e0f-98a2-8ab6e46f46a4",
+  "availability": "Open to new opportunities",
+  "seo": {
+    "siteUrl": "https://muhammadsalman.dev",
+    "title": "Muhammad Salman | Software Engineer — React Native, React, Vue.js, Fintech",
+    "description": "Muhammad Salman is a Software Engineer in Karachi with 3+ years of experience building React Native, React, Vue.js, and Tauri apps for fintech, trading, and e-commerce. Hire for mobile, web, and cross-platform development.",
+    "keywords": [
+      "Muhammad Salman",
+      "Software Engineer Karachi",
+      "React Native developer",
+      "React developer",
+      "Vue.js developer",
+      "Fintech developer",
+      "Mobile app developer Pakistan",
+      "Tauri developer",
+      "Firebase developer"
+    ],
+    "ogImage": "/og-image.svg",
+    "locale": "en_PK",
+    "twitterHandle": ""
+  },
+  "intro": "Results-driven Software Engineer with 3+ years of experience building mobile, web, and desktop applications using React Native, React, Vue.js, and Tauri.",
+  "summary": "Specialized in fintech and trading platforms — integrating real-time data, secure authentication, and payment gateways — and shipping responsive, cross-platform products from UI/UX through production on Google Play and the App Store. Uses AI-assisted tools (Cursor, Claude) to speed up delivery without compromising code quality.",
+  "stats": [
+    { "label": "Years of experience", "value": 3, "suffix": "+" },
+    { "label": "Projects delivered", "value": 10, "suffix": "+" },
+    { "label": "Core technologies", "value": 10, "suffix": "+" }
+  ],
+  "social": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/muhammadsalman-dev" },
+    { "label": "Email", "href": "mailto:msalmangsm@gmail.com" }
+  ],
+  "highlights": [
+    "React Native & cross-platform apps",
+    "Fintech and trading platforms",
+    "Payment gateway integration",
+    "Firebase auth & realtime data",
+    "Play Store & App Store shipping"
+  ],
+  "focus": [
+    "End-to-end mobile and web delivery",
+    "Fintech, trading, and e-commerce products",
+    "Stripe, Apple Pay & Tap to Pay",
+    "Firebase authentication and realtime backends",
+    "AI-assisted development with Cursor & Claude"
+  ],
+  "strengths": [
+    "Scalable React, Vue.js & React Native apps",
+    "Desktop apps with Tauri",
+    "Secure multi-provider authentication",
+    "Interactive dashboards and trading charts",
+    "Clean, modular component architecture"
+  ],
+  "experience": [
+    {
+      "company": "K-Labs",
+      "title": "Software Engineer",
+      "period": "Apr 2024 — Present",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Delivered scalable web and mobile applications end-to-end, from UI/UX implementation through production deployment.",
+        "Integrated real-time Firebase backend services and secure multi-provider authentication (Google, Facebook, email, phone).",
+        "Integrated Stripe, Apple Pay, and Tap to Pay payment gateways for faster, contactless checkout.",
+        "Designed interactive e-commerce dashboards and analytics charts to improve data visualization and decision-making.",
+        "Built fully responsive, cross-platform interfaces with consistent UX across mobile, tablet, and desktop.",
+        "Published and maintained multiple applications on the Google Play Store and Apple App Store.",
+        "Used AI-assisted development tools (Cursor, Claude) to speed up coding, debugging, and refactoring.",
+        "Participated in code reviews and enforced best practices for quality, scalability, and maintainability.",
+        "Wrote and maintained clean, modular, reusable component architecture to reduce duplication across apps."
+      ]
+    },
+    {
+      "company": "Dimensional Sys",
+      "title": "Software Engineer",
+      "period": "Feb 2022 — Mar 2024",
+      "location": "Karachi, Pakistan",
+      "points": [
+        "Built scalable fintech and trading applications across web, mobile, and desktop using React, Vue.js, React Native, and Tauri.",
+        "Implemented real-time trading visualizations and workflow tools using TradingVue.js and React Flow.",
+        "Designed interactive trading charts and financial dashboards for real-time market analysis.",
+        "Implemented secure, real-time solutions with Firebase authentication (Google, Facebook, email).",
+        "Integrated Stripe, Apple Pay, and Tap to Pay payment gateways for faster and more secure fintech transactions.",
+        "Debugged and optimized cross-platform performance across React, Vue.js, React Native, and Tauri codebases.",
+        "Published and maintained mobile applications on the Google Play Store and Apple App Store."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "MNSAJ",
+      "category": "E-commerce",
+      "year": "Vue.js",
+      "summary": "E-commerce platform unifying GCC abaya and fashion brands in one shopping experience.",
+      "stack": ["Vue.js", "Frontend"],
+      "link": { "label": "mnsaj.com", "href": "https://mnsaj.com" }
+    },
+    {
+      "title": "668 Loyalty",
+      "category": "Mobile App",
+      "year": "React Native",
+      "summary": "Customer rewards and ordering app for 668 Coffee — POS-style in-app coffee ordering, point accrual and redemption, plus Instagram-style stories for promotions.",
+      "stack": ["React Native"],
+      "link": { "label": "Google Play", "href": "https://play.google.com/store/search?q=668%20Loyalty&c=apps" }
+    },
+    {
+      "title": "Carcare-Staff",
+      "category": "Mobile App",
+      "year": "React Native",
+      "summary": "Automobile maintenance app for field staff.",
+      "stack": ["React Native"],
+      "link": { "label": "Google Play", "href": "https://play.google.com/store/search?q=Carcare%20Staff&c=apps" }
+    },
+    {
+      "title": "Sunni Waqf",
+      "category": "App & Web",
+      "year": "React Native, React",
+      "summary": "Donation and welfare platform enabling secure contributions and donation tracking.",
+      "stack": ["React Native", "React"],
+      "link": { "label": "alkhair.bh", "href": "https://alkhair.bh" }
+    },
+    {
+      "title": "INJAZ Bahrain",
+      "category": "Website",
+      "year": "Vue.js",
+      "summary": "Website for a non-profit driving youth entrepreneurship and financial literacy programs.",
+      "stack": ["Vue.js", "Frontend"],
+      "link": { "label": "injazbh.org", "href": "https://injazbh.org" }
+    },
+    {
+      "title": "Income Trader",
+      "category": "Fintech",
+      "year": "React Native",
+      "summary": "Financial teaching service app.",
+      "stack": ["React Native"],
+      "link": { "label": "Google Play", "href": "https://play.google.com/store/search?q=Income%20Trader&c=apps" }
+    },
+    {
+      "title": "Invest Edu",
+      "category": "Fintech",
+      "year": "React Native",
+      "summary": "Financial investment service app.",
+      "stack": ["React Native"],
+      "link": { "label": "Google Play", "href": "https://play.google.com/store/search?q=Invest%20Edu&c=apps" }
+    },
+    {
+      "title": "Caloria",
+      "category": "Health & Fitness",
+      "year": "React Native",
+      "summary": "Diet and fitness app — users log their diet and the app generates a personalized meal and exercise plan.",
+      "stack": ["React Native"]
+    }
+  ],
+  "technologies": [
+    "React Native",
+    "React.js",
+    "Vue.js",
+    "Tauri",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Firebase",
+    "REST APIs",
+    "Stripe",
+    "Apple Pay",
+    "Tap to Pay",
+    "Git",
+    "Postman",
+    "Cursor",
+    "Claude"
+  ],
+  "skillGroups": [
+    {
+      "title": "Core Tech",
+      "items": ["React Native", "React.js", "Vue.js", "Tauri", "JavaScript", "HTML", "CSS", "Tailwind CSS"]
+    },
+    {
+      "title": "Integrations & Backend",
+      "items": [
+        "Firebase (Realtime Database, Authentication)",
+        "REST API Integration",
+        "Stripe",
+        "Apple Pay & Tap to Pay"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": ["Git", "Postman", "Cursor", "Claude (AI-assisted development)"]
+    },
+    {
+      "title": "Languages",
+      "items": ["English", "Urdu"]
+    }
+  ],
+  "services": [
+    "Mobile app development with React Native",
+    "Frontend development with React and Vue.js",
+    "Fintech and trading platform features",
+    "Payment gateway and Firebase integration",
+    "Play Store and App Store publishing"
+  ],
+  "education": [
+    {
+      "title": "Bachelor of Science, Computer Science",
+      "meta": "Sir Syed University of Engineering & Technology — 2018 — 2022 | Karachi, Pakistan | GPA 3.6"
+    }
+  ],
+  "nav": [
+    { "id": "home", "label": "Home" },
+    { "id": "about", "label": "Profile" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "projects", "label": "Projects" },
+    { "id": "skills", "label": "Skills" },
+    { "id": "education", "label": "Education" },
+    { "id": "contact", "label": "Contact" }
+  ],
+  "sections": {
+    "hero": {
+      "label": "Professional Profile"
+    },
+    "about": {
+      "label": "Professional Summary",
+      "title": "Building mobile, web, and desktop products for fintech and beyond.",
+      "strengthsTitle": "Strengths",
+      "focusTitle": "Current focus"
+    },
+    "experience": {
+      "label": "Professional Experience",
+      "title": "Companies, roles, and responsibilities."
+    },
+    "projects": {
+      "label": "Projects",
+      "title": "Selected work across mobile, web, and fintech products."
+    },
+    "skills": {
+      "label": "Skills",
+      "title": "Technologies, tools, and languages I work with."
+    },
+    "education": {
+      "label": "Education",
+      "title": "Academic background."
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Open to hiring, freelance work, and collaboration opportunities.",
+      "submit": "Send Message",
+      "submitting": "Sending…",
+      "success": "Message sent — check your inbox soon.",
+      "error": "Could not send. Please try again or email me directly.",
+      "setupError": "Form is not connected yet. Add your Web3Forms access key in site.json.",
+      "emailLabel": "Your Email",
+      "phoneLabel": "Your Phone",
+      "messageLabel": "Message",
+      "emailPlaceholder": "Enter your email",
+      "phonePlaceholder": "Enter your phone number",
+      "messagePlaceholder": "Write about your project or role"
+    }
+  }
+}

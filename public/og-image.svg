@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0b0b0c"/>
+  <rect x="64" y="64" width="1072" height="502" rx="32" fill="#131316" stroke="#27272d"/>
+  <text x="110" y="240" fill="#f4f4f5" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">Muhammad Salman</text>
+  <text x="110" y="320" fill="#f3500f" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="600">Software Engineer</text>
+  <text x="110" y="390" fill="#b4b4bb" font-family="Arial, Helvetica, sans-serif" font-size="28">React Native · React · Vue.js · Fintech</text>
+  <text x="110" y="460" fill="#b4b4bb" font-family="Arial, Helvetica, sans-serif" font-size="24">Karachi, Pakistan</text>
+</svg>
