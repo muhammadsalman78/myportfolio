@@ -10,7 +10,7 @@
   "formAccessKey": "b51e1656-dbdb-4e0f-98a2-8ab6e46f46a4",
   "availability": "Open to new opportunities",
   "seo": {
-    "siteUrl": "https://muhammadsalman.dev",
+    "siteUrl": "https://muhammadsalman.dev/",
     "title": "Muhammad Salman | Software Engineer — React Native, React, Vue.js, Fintech",
     "description": "Muhammad Salman is a Software Engineer in Karachi with 3+ years of experience building React Native, React, Vue.js, and Tauri apps for fintech, trading, and e-commerce. Hire for mobile, web, and cross-platform development.",
     "keywords": [
@@ -24,7 +24,10 @@
       "Tauri developer",
       "Firebase developer"
     ],
-    "ogImage": "/og-image.svg",
+    "ogImage": "/og-image.png",
+    "ogImageWidth": 1200,
+    "ogImageHeight": 630,
+    "ogImageAlt": "Muhammad Salman — Software Engineer specializing in React Native, React, Vue.js, and fintech",
     "locale": "en_PK",
     "twitterHandle": ""
   },

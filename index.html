@@ -33,7 +33,14 @@
       property="og:description"
       content="Muhammad Salman is a Software Engineer in Karachi with 3+ years of experience building React Native, React, Vue.js, and Tauri apps for fintech, trading, and e-commerce."
     />
-    <meta property="og:image" content="https://muhammadsalman.dev/og-image.svg" />
+    <meta property="og:image" content="https://muhammadsalman.dev/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Muhammad Salman — Software Engineer specializing in React Native, React, Vue.js, and fintech"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -44,7 +51,11 @@
       name="twitter:description"
       content="Software Engineer specializing in React Native, React, Vue.js, and fintech products."
     />
-    <meta name="twitter:image" content="https://muhammadsalman.dev/og-image.svg" />
+    <meta name="twitter:image" content="https://muhammadsalman.dev/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Muhammad Salman — Software Engineer specializing in React Native, React, Vue.js, and fintech"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,8 +82,9 @@
             "@id": "https://muhammadsalman.dev/#person",
             "name": "Muhammad Salman",
             "jobTitle": "Software Engineer",
+            "description": "Results-driven Software Engineer with 3+ years of experience building mobile, web, and desktop applications using React Native, React, Vue.js, and Tauri.",
             "email": "msalmangsm@gmail.com",
-            "telephone": "0332-2439312",
+            "telephone": "+92-3322439312",
             "url": "https://muhammadsalman.dev/",
             "sameAs": ["https://www.linkedin.com/in/muhammadsalman-dev"],
             "address": {
@@ -88,7 +100,20 @@
               "Fintech",
               "Firebase",
               "Mobile app development"
-            ]
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "K-Labs"
+            }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://muhammadsalman.dev/#profile",
+            "url": "https://muhammadsalman.dev/",
+            "name": "Muhammad Salman | Software Engineer — React Native, React, Vue.js, Fintech",
+            "description": "Muhammad Salman is a Software Engineer in Karachi with 3+ years of experience building React Native, React, Vue.js, and Tauri apps for fintech, trading, and e-commerce.",
+            "about": { "@id": "https://muhammadsalman.dev/#person" },
+            "mainEntity": { "@id": "https://muhammadsalman.dev/#person" }
           }
         ]
       }
@@ -96,8 +121,18 @@
   </head>
   <body>
     <noscript>
-      Muhammad Salman — Software Engineer in Karachi specializing in React Native, React, Vue.js, and
-      fintech products. Contact: msalmangsm@gmail.com
+      <main>
+        <h1>Muhammad Salman</h1>
+        <p>Software Engineer in Karachi specializing in React Native, React, Vue.js, Tauri, and fintech products.</p>
+        <p>
+          Results-driven Software Engineer with 3+ years of experience building mobile, web, and desktop
+          applications. Hire for mobile, web, and cross-platform development.
+        </p>
+        <p>Contact: <a href="mailto:msalmangsm@gmail.com">msalmangsm@gmail.com</a> · +92-3322439312</p>
+        <p>
+          <a href="https://www.linkedin.com/in/muhammadsalman-dev">LinkedIn</a>
+        </p>
+      </main>
     </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

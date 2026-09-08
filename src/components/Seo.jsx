@@ -2,14 +2,14 @@ import { useEffect } from 'react'
 import site from '../data/site.json'
 
 function upsertMeta(attr, key, content) {
-  if (!content) return
+  if (content === undefined || content === null || content === '') return
   let element = document.head.querySelector(`meta[${attr}="${key}"]`)
   if (!element) {
     element = document.createElement('meta')
     element.setAttribute(attr, key)
     document.head.appendChild(element)
   }
-  element.setAttribute('content', content)
+  element.setAttribute('content', String(content))
 }
 
 function upsertLink(rel, href) {
@@ -23,16 +23,27 @@ function upsertLink(rel, href) {
   element.setAttribute('href', href)
 }
 
+function absoluteUrl(base, path) {
+  if (!base || !path) return ''
+  try {
+    return new URL(path, base).href
+  } catch {
+    return `${base.replace(/\/$/, '')}${path.startsWith('/') ? path : `/${path}`}`
+  }
+}
+
 export function Seo() {
   useEffect(() => {
-    const { seo, name, role, email, phone, social } = site
-    const pageTitle = seo?.title || `${name} — ${role}`
+    const { seo, name } = site
+    const pageTitle = seo?.title || `${name} — ${site.role}`
     const description = seo?.description || site.intro
     const url = seo?.siteUrl || ''
-    const image = seo?.ogImage ? `${url}${seo.ogImage}` : ''
+    const image = absoluteUrl(url, seo?.ogImage)
+    const imageAlt = seo?.ogImageAlt || pageTitle
     const keywords = Array.isArray(seo?.keywords) ? seo.keywords.join(', ') : ''
 
     document.title = pageTitle
+    document.documentElement.lang = 'en'
 
     upsertMeta('name', 'description', description)
     upsertMeta('name', 'keywords', keywords)
@@ -47,82 +58,26 @@ export function Seo() {
     upsertMeta('property', 'og:description', description)
     upsertMeta('property', 'og:locale', seo?.locale || 'en_US')
     if (url) upsertMeta('property', 'og:url', url)
-    if (image) upsertMeta('property', 'og:image', image)
+    if (image) {
+      upsertMeta('property', 'og:image', image)
+      upsertMeta('property', 'og:image:type', 'image/png')
+      upsertMeta('property', 'og:image:width', seo?.ogImageWidth || 1200)
+      upsertMeta('property', 'og:image:height', seo?.ogImageHeight || 630)
+      upsertMeta('property', 'og:image:alt', imageAlt)
+    }
 
     upsertMeta('name', 'twitter:card', 'summary_large_image')
     upsertMeta('name', 'twitter:title', pageTitle)
     upsertMeta('name', 'twitter:description', description)
-    if (image) upsertMeta('name', 'twitter:image', image)
+    if (image) {
+      upsertMeta('name', 'twitter:image', image)
+      upsertMeta('name', 'twitter:image:alt', imageAlt)
+    }
     if (seo?.twitterHandle) upsertMeta('name', 'twitter:creator', seo.twitterHandle)
 
     if (url) upsertLink('canonical', url)
 
-    const linkedIn = social.find((item) => item.label.toLowerCase() === 'linkedin')?.href
-    const sameAs = [linkedIn, url].filter(Boolean)
-
-    const structuredData = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'WebSite',
-          '@id': url ? `${url}/#website` : undefined,
-          url: url || undefined,
-          name: pageTitle,
-          description,
-          inLanguage: 'en',
-          publisher: { '@id': url ? `${url}/#person` : undefined },
-        },
-        {
-          '@type': 'Person',
-          '@id': url ? `${url}/#person` : undefined,
-          name,
-          jobTitle: role,
-          description: site.intro,
-          email,
-          telephone: phone,
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Karachi',
-            addressCountry: 'PK',
-          },
-          url: url || undefined,
-          sameAs,
-          knowsAbout: [
-            'React Native',
-            'React',
-            'Vue.js',
-            'Tauri',
-            'Fintech',
-            'Firebase',
-            'Mobile app development',
-          ],
-          worksFor: {
-            '@type': 'Organization',
-            name: 'K-Labs',
-          },
-        },
-        {
-          '@type': 'ProfilePage',
-          '@id': url ? `${url}/#profile` : undefined,
-          url: url || undefined,
-          name: pageTitle,
-          description,
-          about: { '@id': url ? `${url}/#person` : undefined },
-          mainEntity: { '@id': url ? `${url}/#person` : undefined },
-        },
-      ],
-    }
-
-    let script = document.getElementById('seo-json-ld')
-    if (!script) {
-      script = document.createElement('script')
-      script.id = 'seo-json-ld'
-      script.type = 'application/ld+json'
-      document.head.appendChild(script)
-    }
-    script.textContent = JSON.stringify(structuredData)
-
-    document.documentElement.lang = 'en'
+    // JSON-LD stays in index.html only so crawlers see a single static graph.
   }, [])
 
   return null
