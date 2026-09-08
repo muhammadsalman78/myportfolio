@@ -32,12 +32,20 @@ function absoluteUrl(base, path) {
   }
 }
 
+function resolveSiteUrl(configured) {
+  // Prefer the host the page is actually served from so og:image matches the shared link.
+  if (typeof window !== 'undefined' && window.location?.origin) {
+    return `${window.location.origin}/`
+  }
+  return configured || ''
+}
+
 export function Seo() {
   useEffect(() => {
     const { seo, name } = site
     const pageTitle = seo?.title || `${name} — ${site.role}`
     const description = seo?.description || site.intro
-    const url = seo?.siteUrl || ''
+    const url = resolveSiteUrl(seo?.siteUrl)
     const image = absoluteUrl(url, seo?.ogImage)
     const imageAlt = seo?.ogImageAlt || pageTitle
     const keywords = Array.isArray(seo?.keywords) ? seo.keywords.join(', ') : ''
@@ -76,8 +84,6 @@ export function Seo() {
     if (seo?.twitterHandle) upsertMeta('name', 'twitter:creator', seo.twitterHandle)
 
     if (url) upsertLink('canonical', url)
-
-    // JSON-LD stays in index.html only so crawlers see a single static graph.
   }, [])
 
   return null

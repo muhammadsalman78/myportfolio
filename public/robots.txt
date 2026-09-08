@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://muhammadsalman.dev/sitemap.xml
+Sitemap: https://myportfolio-theta-azure-88.vercel.app/sitemap.xml
